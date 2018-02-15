@@ -1,0 +1,15 @@
+
+<table class="table table-striped">
+  <tr>
+   <th>Full Name</th>
+   <th> Age </th>
+   <th> Gender </th>
+  </tr>
+  <tbody>
+    <tr *ngFor = "let aut of authorsArr">
+      <td [ngClass]="{'new':aut.newAuthor}">{{toUpperCase(aut.fName+" "+aut.mName+" "+aut.lName)}} </td>
+      <td>{{aut.age}}</td>
+      <td>{{aut.gender}}</td>
+     </tr>
+     </tbody>
+     </table>

@@ -1,0 +1,24 @@
+<h1>Employee List</h1>
+<form>
+  <div class="form-group">
+    <label for = "Name"> Name:</label>
+    <input type="Name" class="form-control" [(ngModel)]="course.Name" name = "Name" placeholder="Enter  Name">
+  </div>
+  
+  <div class="form-group">
+    <label for = "skilllevel"> skilllevel:</label>
+    <label class="radio-inline" *ngFor= "let g of getKeysforSkilllevel()"></label>
+    <input type="skilllevel" class="form-control" [(ngModel)]="course.skilllevel" name = "skilllevel" placeholder="Enter  skilllevel">
+  
+  </div>
+  <div class="form-group">
+    <label for = "duration"> Duration:</label>
+    <input type="duration" class="form-control" [(ngModel)]="course.duration" name = "duration" placeholder="Enter  duration">
+  </div>
+  <div class="form-group">
+    <label for = "price"> Price:</label>
+    <input type="price" class="form-control" [(ngModel)]="course.price" name = "price" placeholder="Enter  price">
+  </div>
+
+  <button type="submit" class="btn btn-danger" (click)='onSubmit()'>Submit</button>
+</form>

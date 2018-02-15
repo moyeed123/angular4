@@ -1,0 +1,26 @@
+<h1>Author List</h1>
+<form>
+  <div class="form-group">
+    <label for = "fName"> FirstName:</label>
+    <input type="fName" class="form-control" [(ngModel)]="author.fName" name = "fName" placeholder="Enter  fName">
+  </div>
+  <div class="form-group">
+    <label for = "lName"> LastName:</label>
+    <input type="lName" class="form-control" [(ngModel)]="author.lName" name = "lName" placeholder="Enter  lName">
+  </div>
+
+<div class="form-group">
+  <label for = "mName"> MiddleName:</label>
+  <input type="mName" class="form-control" [(ngModel)]="author.mName" name = "mName" placeholder="Enter  mName">
+</div>
+<div class="form-group">
+  <label for = "age"> age:</label>
+  <input type="age" class="form-control" [(ngModel)]="author.age" name = "age" placeholder="Enter  age">
+</div>
+<div class="form-group">
+  <label for = "gender"> gender:</label>
+  <input type="gender" class="form-control" [(ngModel)]="author.gender" name = "gender" placeholder="Enter  gender">
+  
+  <button type="submit" class="btn btn-danger" (click)='onSubmit()'>Submit</button>
+</div>
+</form>
